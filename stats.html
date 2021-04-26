@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Covid-19 në Kosovë</title>
+
+<script src="stats_files/header-attrs-2.7/header-attrs.js"></script>
+<script src="stats_files/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="stats_files/bootstrap-3.3.5/css/sandstone.min.css" rel="stylesheet" />
+<script src="stats_files/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="stats_files/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="stats_files/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="stats_files/navigation-1.1/tabsets.js"></script>
+<link href="stats_files/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="stats_files/highlightjs-9.12.0/highlight.js"></script>
+<meta http-equiv="refresh" content="300">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-store">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta name="description" content="Web faqe, Covid-19 tracker, qe tregon statistika te ndryshme ne lidhje me situaten me Koronavirus ne Kosove. Ketu mund te gjeni numrin e te infektuareve me koronavirus ne Kosove. Po ashtu edhe informacione tjera te detajuara per situaten me koronavirus ne Kosove te raportuara nga IKSHPK.">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+<meta name="keywords" content="Covid-19, Kosovo, Kosova, Pandemia, Fyti, Dhembje, Ethe, Koronavirusi, Vurisi, Korona, Infektuar, Sheruar, Vdekur, Simptomat, Prishtina, IKSHPK, Ministria, Shendetesise, QKUK">
+<meta name="author" content="Kushtrim Visoka">
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Covid-19 në Kosovë</h1>
+<h4 class="author"><div style="text-align: center; padding-bottom: 10px;">
+<a href="http://kosovo.today" target="blank" style="color: black;">© http://kosovo.today</a>. <a href="https://twitter.com/kushtrimvisoka" target="blank" style="color: black;">Author: Kushtrim Visoka</a>
+</div></h4>
+<h4 class="date"><div style="text-align: center; padding-bottom: 10px;">
+Përditësuar në 13:07, April 26, 2021
+</div></h4>
+
+</div>
+
+
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/1b8207af50.js" crossorigin="anonymous"></script>
+<style type="text/css">
+@import url("sb-admin-2.min.css");
+</style>
+<div class="container-fluid">
+<div class="row">
+<div class="col">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<ul class="navbar-nav">
+<li class="nav-item" style="font-size: medium;">
+<a class="nav-link" href="http://kosovo.today">Home</a>
+</li>
+<li class="nav-item active" style="font-size: medium;">
+<a class="nav-link" href="http://kosovo.today/stats.html">Stats<span class="sr-only">(current)</span></a>
+</li>
+<li class="nav-item" style="font-size: medium;">
+<a class="nav-link" href="http://kosovo.today/database.html">Database</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<style type="text/css">
+text { font-family: 'Open Sans Condensed', sans-serif; }
+he4 { padding-top:0; border-bottom:2px solid black; font-size:20px; font-weight:700; padding-bottom:5px;}
+.tipspanstyle {
+  font-size:14px;
+  font-weight:400;
+  clear:right;
+  padding-bottom:10px;
+}
+.tipchart { text-align:left; }
+.tiprow { vertical-align:middle; }
+.tipbar {
+  background-color:steelblue;
+  font:9px sans-serif;
+  text-align:left;
+  padding:3px;
+  margin:1px;
+  line-height:10px;
+  color:black;
+}
+.tipbarticks {
+  font: 11px sans-serif;
+  text-align:right;
+  padding-right:3px;
+}
+h1 { color: #111; 
+  font-family: 'Open Sans Condensed', sans-serif; 
+  font-size: 64px; 
+  font-weight: 700; 
+  line-height: 64px; 
+  margin: 0 0 0; 
+  padding: 20px 30px; 
+  text-align: center; 
+  text-transform: uppercase; 
+}
+.twitter-followers {
+  padding: 12px 12px 0;
+  font-family: inherit;
+}
+.followers-header {
+  margin: 18px 0;
+  font-size: 16px;
+}
+.followers-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+.followers-tbl {
+    padding: 12px 12px 0;
+  font-size: 14px;
+  line-height: 18px;
+}
+.followers-tbl a {
+  color: inherit;
+}
+.header {
+  border-bottom: 2px solid #555;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.header:hover {
+  background-color: #eee;
+}
+
+.bar-cell {
+  display: flex;
+  align-items: center;
+}
+.number {
+  font-family: inherit;
+  font-size: 13.5px;
+  white-space: pre;
+}
+.bar-chart {
+  flex-grow: 1;
+  margin-left: 6px;
+  height: 14px;
+}
+.bar {
+  height: 100%;
+}
+</style>
+<p><br><br></p>
+<p><img src="stats_files/figure-html/unnamed-chunk-3-1.png" width="1000" /> <br><br></p>
+<div id="rrjedha" class="section level2">
+<h2>Rrjedha</h2>
+<p><img src="stats_files/figure-html/unnamed-chunk-4-1.png" width="960" /></p>
+<!-- ### Interaktive -->
+<!-- <br> -->
+<!-- Rrjedha e të konfirmuarëve për çdo komunë në baza ditore. -->
+<!-- ```{r echo=FALSE, warning=FALSE, message= FALSE, fig.width= 10, fig.height = 5} -->
+<!-- new <- data %>%  -->
+<!--   group_by(date, Municipality) %>%  -->
+<!--   summarise(confirmed = sum(confirmed), healed = sum(healed), dead = sum(dead)) %>%  -->
+<!--   rename("Të konfirmuar" = confirmed, "Të shëruar" = healed, "Të vdekur" = dead) -->
+<!-- new <- melt(new,  -->
+<!--             id.vars= c("date", "Municipality"),  -->
+<!--             measure.vars= c("Të konfirmuar", "Të shëruar", "Të vdekur"), -->
+<!--             variable.name= "type", -->
+<!--             value.name=    "value" -->
+<!-- ) -->
+<!-- new$date <- as.Date(new$date, '%m/%d/%Y') -->
+<!-- new$value <- as.numeric(new$value) -->
+<!-- new <- new %>%  -->
+<!--   filter(type == "Të konfirmuar") -->
+<!-- library(streamgraph) -->
+<!-- pp <- streamgraph(new, key="Municipality", value="value", date="date", height="500px", width="900px") %>% -->
+<!--   sg_legend(TRUE, "Municipality: ") -->
+<!-- pp  -->
+<!-- ``` -->
+<p><br><br></p>
+</div>
+<div id="nr-i-testeve" class="section level2">
+<h2>Nr i testeve</h2>
+<p><br></p>
+<p><img src="stats_files/figure-html/unnamed-chunk-5-1.png" width="960" /></p>
+<p>Për krijimin e këtij grafikoni, është marrur parasyshë numri total i testimeve brenda ditës të raportuar nga IKSHPK, në kuadër të së cilave janë futur edhe rastet e deklaruara si të shëruar. Deri më tani nuk ka konfirmim nëse mostrat për të shëruarit janë mostra shtesë nga ato të cilat deklarohen në baza ditore.</p>
+<p><br><br></p>
+</div>
+<div id="rajoni" class="section level2">
+<h2>Rajoni</h2>
+<p><br> <img src="stats_files/figure-html/unnamed-chunk-6-1.png" width="1000" /></p>
+<p><br><br></p>
+</div>
+<div id="burimi" class="section level2">
+<h2>Burimi</h2>
+<p><br> Të gjitha të dhënat për numrin e të konfirmuarëve në Kosovë i referohen Institutit Kombëtar i Shëndetësisë Publike të Kosovës, Ministrisë së Shëndetësisë së Kosovës, apo edhe portaleve mediatike. Të dhënat për infektimet në gjithë botën i referohen Johns Hopkins University.</p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
