@@ -4,3 +4,4 @@
 *.Rmd
 .Rproj.user
 .Rhistory
+.RData
