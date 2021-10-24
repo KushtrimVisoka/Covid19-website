@@ -151,7 +151,7 @@ a <- ggplot(vaccines, aes(x = date, y = value, fill = fill, label = label)) +
   theme_void()+
   theme(legend.position = "none")
 
-ggsave(file="/Users/kushtrimvisoka/Library/Mobile Documents/com~apple~CloudDocs/Web/kosovo.today/images/bar.svg", plot=a, width=10, height=0.3)
+ggsave(file="images/bar.svg", plot=a, width=10, height=0.3)
 
 # ------- Create the vaccination progress chart ------- 
 
@@ -226,8 +226,7 @@ stroke-width: 2;"
 b <- girafe(ggobj = b, height_svg = 3,
        options = list(opts_hover(css = hover_css), opts_tooltip(css = tooltip_css), opts_zoom(max = 10)))
 
-htmlwidgets::saveWidget(b, "/Users/kushtrimvisoka/Library/Mobile Documents/com~apple~CloudDocs/Web/kosovo.today/vaccbar.html",
-                        selfcontained = F)
+htmlwidgets::saveWidget(b, "vaccbar.html", selfcontained = F)
 
 # ggsave(plot = b, file="/Users/kushtrimvisoka/Library/Mobile Documents/com~apple~CloudDocs/Web/kosovo.today/images/vaccbar.svg", width=10, height=5)
 
@@ -293,7 +292,7 @@ json <- data.frame(nje, dy, tre, kater, pese, gjashte, shtate, tete, nente, dhje
 json <- toJSON(json)
 json <- str_remove(json, "\\[")
 json <- str_remove(json, "\\]")
-write(json, "/Users/kushtrimvisoka/Library/Mobile Documents/com~apple~CloudDocs/Web/kosovo.today/data.json")
+write(json, "data.json")
 
 # ------- Create the Kosovo map with Covid-19 data ------- 
 
@@ -417,8 +416,7 @@ fill: rgb(32,32,32, 0.8);"
 p <- girafe(ggobj = p, 
        options = list(opts_hover(css = hover_css), opts_tooltip(css = tooltip_css), opts_zoom(max = 10)))
 
-htmlwidgets::saveWidget(p, "/Users/kushtrimvisoka/Library/Mobile Documents/com~apple~CloudDocs/Web/kosovo.today/map.html",
-                        selfcontained = F)
+htmlwidgets::saveWidget(p, "map.html", selfcontained = F)
 
 # ggsave(plot = p, file="/Users/kushtrimvisoka/Library/Mobile Documents/com~apple~CloudDocs/Web/kosovo.today/images/map.svg", width=10, height=5)
 
@@ -548,8 +546,7 @@ stroke-width: 2;"
 p <- girafe(ggobj = a,
             options = list(opts_hover(css = hover_css), opts_tooltip(css = tooltip_css), opts_zoom(max = 10)))
 
-htmlwidgets::saveWidget(p, "/Users/kushtrimvisoka/Library/Mobile Documents/com~apple~CloudDocs/Web/kosovo.today/njeslashkater.html",
-                        selfcontained = F)
+htmlwidgets::saveWidget(p, "njeslashkater.html", selfcontained = F)
 
 
 # ------- 2 / 4 ------- 
@@ -618,8 +615,7 @@ stroke-width: 2;"
 p <- girafe(ggobj = a,
             options = list(opts_hover(css = hover_css), opts_tooltip(css = tooltip_css), opts_zoom(max = 10)))
 
-htmlwidgets::saveWidget(p, "/Users/kushtrimvisoka/Library/Mobile Documents/com~apple~CloudDocs/Web/kosovo.today/dyslashkater.html",
-                        selfcontained = F)
+htmlwidgets::saveWidget(p, "dyslashkater.html", selfcontained = F)
 
 
 # ------- 3 / 4 ------- 
@@ -688,8 +684,7 @@ stroke-width: 2;"
 p <- girafe(ggobj = a, 
             options = list(opts_hover(css = hover_css), opts_tooltip(css = tooltip_css), opts_zoom(max = 10)))
 
-htmlwidgets::saveWidget(p, "/Users/kushtrimvisoka/Library/Mobile Documents/com~apple~CloudDocs/Web/kosovo.today/treslashkater.html",
-                        selfcontained = F)
+htmlwidgets::saveWidget(p, "treslashkater.html", selfcontained = F)
 
 
 # ------- 4 / 4 ------- 
@@ -761,7 +756,7 @@ stroke-width: 2;"
 p <- girafe(ggobj = a,
             options = list(opts_hover(css = hover_css), opts_tooltip(css = tooltip_css), opts_zoom(max = 10)))
 
-htmlwidgets::saveWidget(p, "/Users/kushtrimvisoka/Library/Mobile Documents/com~apple~CloudDocs/Web/kosovo.today/katerslashkater.html",
+htmlwidgets::saveWidget(p, "katerslashkater.html",
                         selfcontained = F)
 
 
@@ -832,7 +827,7 @@ p <- ggplot(kum, aes(x=date, y=value, col=type)) +
                                 color = "#222222")
   )
 
-ggsave(plot = p, file="/Users/kushtrimvisoka/Library/Mobile Documents/com~apple~CloudDocs/Web/kosovo.today/images/main.svg", width=10, height=5)
+ggsave(plot = p, file="images/main.svg", width=10, height=5)
 
 
 # ------- Table Confirmed by municipality ------
@@ -919,7 +914,7 @@ table <- reactable(
   )
 )
 
-save_reactable(table, "/Users/kushtrimvisoka/Library/Mobile Documents/com~apple~CloudDocs/Web/kosovo.today/table.html")
+save_reactable(table, "table.html")
 
 
 # ------ HISTORIKU NE REGJION -------
@@ -1106,7 +1101,7 @@ p <- ggplot(region, aes(x=date, y=sqrt(confirmed), col=type)) +
                                 color = "#222222")
   )
 
-ggsave(plot = p, file="/Users/kushtrimvisoka/Library/Mobile Documents/com~apple~CloudDocs/Web/kosovo.today/images/region.svg", width=10, height=6)
+ggsave(plot = p, file="images/region.svg", width=10, height=6)
 
 # ------ Confirmed by city ------
 
@@ -1171,7 +1166,7 @@ a <- ggplot()+
   )
 
 
-ggsave(plot = a, file="/Users/kushtrimvisoka/Library/Mobile Documents/com~apple~CloudDocs/Web/kosovo.today/images/bymuni.jpeg", width=10, height=7, dpi = 300)
+ggsave(plot = a, file="images/bymuni.jpeg", width=10, height=7, dpi = 300)
 
 # ------ Rrjedha ------
 
@@ -1234,4 +1229,4 @@ theme_rrjedha()+
                                 color = "#222222")
   )
 
-ggsave(plot = p, file="/Users/kushtrimvisoka/Library/Mobile Documents/com~apple~CloudDocs/Web/kosovo.today/images/rrjedha.svg", width=10, height=5)
+ggsave(plot = p, file="images/rrjedha.svg", width=10, height=5)
