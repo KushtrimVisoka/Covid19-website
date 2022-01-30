@@ -18,15 +18,15 @@
   </clipPath>
 </defs>
 <g clip-path='url(#cpMC4wMHw3MjAuMDB8MC4wMHwyMS42MA==)'>
-<rect x='589.07' y='0.98' width='98.20' height='19.64' style='stroke-width: 1.07; stroke: none; stroke-linecap: square; stroke-linejoin: miter; fill: #EDF0F2;' />
-<rect x='370.39' y='0.98' width='218.69' height='19.64' style='stroke-width: 1.07; stroke: none; stroke-linecap: square; stroke-linejoin: miter; fill: #DDE0E2;' />
-<rect x='339.43' y='0.98' width='30.96' height='19.64' style='stroke-width: 1.07; stroke: none; stroke-linecap: square; stroke-linejoin: miter; fill: #CCD6BE;' />
-<rect x='57.97' y='0.98' width='281.46' height='19.64' style='stroke-width: 1.07; stroke: none; stroke-linecap: square; stroke-linejoin: miter; fill: #A8BA90;' />
-<rect x='32.73' y='0.98' width='25.24' height='19.64' style='stroke-width: 1.07; stroke: none; stroke-linecap: square; stroke-linejoin: miter; fill: #86A95F;' />
-<text x='638.17' y='13.35' text-anchor='middle' style='font-size: 7.11px; font-family: Arial;' textLength='35.95px' lengthAdjust='spacingAndGlyphs'>Nën 12 vjet</text>
-<text x='479.73' y='13.35' text-anchor='middle' style='font-size: 7.11px; font-family: Arial;' textLength='66.78px' lengthAdjust='spacingAndGlyphs'>Ende të pa vaksinuar</text>
-<text x='354.91' y='13.35' text-anchor='middle' style='font-size: 7.11px; font-family: Arial;' textLength='28.05px' lengthAdjust='spacingAndGlyphs'>Një dozë</text>
-<text x='198.70' y='13.35' text-anchor='middle' style='font-size: 7.11px; font-family: Arial;' textLength='26.08px' lengthAdjust='spacingAndGlyphs'>Dy doza</text>
-<text x='45.35' y='13.35' text-anchor='middle' style='font-size: 7.11px; font-family: Arial;' textLength='28.05px' lengthAdjust='spacingAndGlyphs'>Tre doza</text>
+<rect x='589.25' y='0.98' width='98.02' height='19.64' style='stroke-width: 1.07; stroke: none; stroke-linecap: square; stroke-linejoin: miter; fill: #EDF0F2;' />
+<rect x='371.13' y='0.98' width='218.12' height='19.64' style='stroke-width: 1.07; stroke: none; stroke-linecap: square; stroke-linejoin: miter; fill: #DDE0E2;' />
+<rect x='340.24' y='0.98' width='30.89' height='19.64' style='stroke-width: 1.07; stroke: none; stroke-linecap: square; stroke-linejoin: miter; fill: #CCD6BE;' />
+<rect x='59.08' y='0.98' width='281.15' height='19.64' style='stroke-width: 1.07; stroke: none; stroke-linecap: square; stroke-linejoin: miter; fill: #A8BA90;' />
+<rect x='32.73' y='0.98' width='26.36' height='19.64' style='stroke-width: 1.07; stroke: none; stroke-linecap: square; stroke-linejoin: miter; fill: #86A95F;' />
+<text x='638.26' y='13.35' text-anchor='middle' style='font-size: 7.11px; font-family: Arial;' textLength='35.95px' lengthAdjust='spacingAndGlyphs'>Nën 12 vjet</text>
+<text x='480.19' y='13.35' text-anchor='middle' style='font-size: 7.11px; font-family: Arial;' textLength='66.78px' lengthAdjust='spacingAndGlyphs'>Ende të pa vaksinuar</text>
+<text x='355.68' y='13.35' text-anchor='middle' style='font-size: 7.11px; font-family: Arial;' textLength='28.05px' lengthAdjust='spacingAndGlyphs'>Një dozë</text>
+<text x='199.66' y='13.35' text-anchor='middle' style='font-size: 7.11px; font-family: Arial;' textLength='26.08px' lengthAdjust='spacingAndGlyphs'>Dy doza</text>
+<text x='45.91' y='13.35' text-anchor='middle' style='font-size: 7.11px; font-family: Arial;' textLength='28.05px' lengthAdjust='spacingAndGlyphs'>Tre doza</text>
 </g>
 </svg>
